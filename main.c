@@ -70,7 +70,8 @@ int main(int argc, char **argv){
 		return 1;
 	}
 	libaroma_config()->runtime_monitor = LIBAROMA_START_MUTEPARENT;
-	libaroma_gfx_startup_dpi(120);
+	//force LDPI
+	//libaroma_gfx_startup_dpi(120);
 	/* start libaroma */
 	if (!libaroma_start()){
 		alog("failed to start libaroma");
